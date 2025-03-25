@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz cumpleaños, mi amado héroe!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://example.com/spiderman-celebration.jpg') no-repeat center center fixed; /* Cambia esta URL por una imagen temática */
+            background-size: cover;
+            font-family: 'Comic Sans MS', sans-serif;
+            text-align: center;
+            overflow: hidden;
+            color: #ffffff;
+        }
+        h1 {
+            font-size: 5rem;
+            margin-top: 50px;
+            color: #e60012; /* Rojo Spider-Man */
+            text-transform: uppercase;
+            text-shadow: 3px 3px 15px #000;
+            animation: swing 2s infinite alternate; /* Balanceo épico */
+        }
+        p {
+            font-size: 1.8rem;
+            margin: 20px;
+            text-shadow: 2px 2px 5px #000;
+        }
+        .spiderman {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: url('https://example.com/spiderman-icon.png') no-repeat center; /* Imagen de Spider-Man */
+            background-size: contain;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            animation: bounce 3s infinite; /* Salto animado */
+        }
+        .heart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #e60012;
+            border-radius: 50%;
+            animation: float 5s infinite ease-in-out;
+        }
+        .heart:before,
+        .heart:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #e60012;
+            border-radius: 50%;
+        }
+        .heart:before {
+            top: -25px;
+            left: 0;
+        }
+        .heart:after {
+            left: 25px;
+            top: 0;
+        }
+        @keyframes swing {
+            0% { transform: rotate(-10deg); }
+            100% { transform: rotate(10deg); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-300px); opacity: 0; }
+        }
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #e60012;
+            color: #ffffff;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px #000000;
+            text-decoration: none;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+        .button:hover {
+            background-color: #b3000e;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="spiderman"></div>
+    <h1>¡Feliz cumpleaños, mi superhéroe!</h1>
+    <p>Eres mi Peter Parker, mi Hombre Araña, y el héroe que siempre está allí para llenar mis días de amor y aventuras. 🕸️❤️</p>
+    <!-- Corazones animados -->
+    <div class="heart" style="top: 70%; left: 20%;"></div>
+    <div class="heart" style="top: 80%; left: 60%;"></div>
+    <div class="heart" style="top: 50%; left: 30%;"></div>
+    <div class="heart" style="top: 90%; left: 70%;"></div>
+    <div class="heart" style="top: 40%; left: 50%;"></div>
+    <div class="heart" style="top: 60%; left: 10%;"></div>
+    <a class="button" href="pagina2.html">Descubra su sorpresa</a>
+</body>
+</html>
